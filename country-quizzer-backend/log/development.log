@@ -1214,3 +1214,908 @@ Processing by Api::V1::CountriesController#index as HTML
 Completed 200 OK in 41ms (Views: 19.0ms | ActiveRecord: 18.2ms | Allocations: 9539)
 
 
+  [1m[36mCountry Load (2.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/countries" for ::1 at 2020-05-17 14:28:48 -0600
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/countries" for ::1 at 2020-05-17 14:29:38 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CountriesController#index as HTML
+  [1m[36mCountry Load (1.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 16.5ms | ActiveRecord: 13.2ms | Allocations: 10128)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7283389696208071320)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToAttemps (20200517203001)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7283389696208071320)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7283389696208071320)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToAttempts (20200517203001)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "albania" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "andorra" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "armenia" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "austria" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "azerbaijan" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "belarus" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "belgium" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "bosnia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "bulgaria" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "croatia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "cyprus" boolean[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "czechia" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "denmark" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "estonia" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "finland" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "france" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "georgia" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "germany" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "greece" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "hungary" boolean[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "attempts" ADD "iceland" boolean[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "ireland" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "italy" boolean[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "kazakhstan" boolean[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" ADD "kosovo" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "latvia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "liechtenstein" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "lithuania" boolean[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "luxembourg" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "malta" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "moldova" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "monaco" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "montenegro" boolean[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "netherlands" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "north_macedonia" boolean[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "norway" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "poland" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "portugal" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "romania" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "russia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "san_marino" boolean[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" ADD "serbia" boolean[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "slovakia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "slovenia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "spain" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "sweden" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "switzerland" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "turkey" boolean[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "ukraine" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "united_kingdom" boolean[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" ADD "vatican_city" boolean[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200517203001"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7283389696208071320)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (213.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_development"[0m
+  [1m[35m (243.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_test"[0m
+  [1m[35m (563.5ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_development" ENCODING = 'unicode'[0m
+  [1m[35m (433.9ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "armenia" boolean, "austria" boolean, "azerbaijan" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "georgia" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kazakhstan" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 20:39:46.611165"], ["updated_at", "2020-05-17 20:39:46.611165"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "9b14edccb0355c2229d47587b242c8d1713928e2"], ["created_at", "2020-05-17 20:39:46.628034"], ["updated_at", "2020-05-17 20:39:46.628034"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "armenia" boolean, "austria" boolean, "azerbaijan" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "georgia" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kazakhstan" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 20:39:46.766829"], ["updated_at", "2020-05-17 20:39:46.766829"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.9ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-05-17 20:39:46.775624"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "9b14edccb0355c2229d47587b242c8d1713928e2"], ["created_at", "2020-05-17 20:39:46.785300"], ["updated_at", "2020-05-17 20:39:46.785300"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAttempt Load (1.6ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (1.1ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Albania"], ["created_at", "2020-05-17 20:39:46.912842"], ["updated_at", "2020-05-17 20:39:46.912842"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Andorra"], ["created_at", "2020-05-17 20:39:46.921092"], ["updated_at", "2020-05-17 20:39:46.921092"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Armenia"], ["created_at", "2020-05-17 20:39:46.926391"], ["updated_at", "2020-05-17 20:39:46.926391"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Austria"], ["created_at", "2020-05-17 20:39:46.932392"], ["updated_at", "2020-05-17 20:39:46.932392"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Azerbaijan"], ["created_at", "2020-05-17 20:39:46.937614"], ["updated_at", "2020-05-17 20:39:46.937614"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Belarus"], ["created_at", "2020-05-17 20:39:46.942761"], ["updated_at", "2020-05-17 20:39:46.942761"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Belgium"], ["created_at", "2020-05-17 20:39:46.948114"], ["updated_at", "2020-05-17 20:39:46.948114"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bosnia"], ["created_at", "2020-05-17 20:39:46.952736"], ["updated_at", "2020-05-17 20:39:46.952736"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bulgaria"], ["created_at", "2020-05-17 20:39:46.958063"], ["updated_at", "2020-05-17 20:39:46.958063"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Croatia"], ["created_at", "2020-05-17 20:39:46.962869"], ["updated_at", "2020-05-17 20:39:46.962869"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Cyprus"], ["created_at", "2020-05-17 20:39:46.967393"], ["updated_at", "2020-05-17 20:39:46.967393"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Czechia"], ["created_at", "2020-05-17 20:39:46.972296"], ["updated_at", "2020-05-17 20:39:46.972296"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Denmark"], ["created_at", "2020-05-17 20:39:46.976847"], ["updated_at", "2020-05-17 20:39:46.976847"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Estonia"], ["created_at", "2020-05-17 20:39:46.982602"], ["updated_at", "2020-05-17 20:39:46.982602"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Finland"], ["created_at", "2020-05-17 20:39:46.987802"], ["updated_at", "2020-05-17 20:39:46.987802"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "France"], ["created_at", "2020-05-17 20:39:46.992388"], ["updated_at", "2020-05-17 20:39:46.992388"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Georgia"], ["created_at", "2020-05-17 20:39:46.998059"], ["updated_at", "2020-05-17 20:39:46.998059"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Germany"], ["created_at", "2020-05-17 20:39:47.003188"], ["updated_at", "2020-05-17 20:39:47.003188"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Greece"], ["created_at", "2020-05-17 20:39:47.007864"], ["updated_at", "2020-05-17 20:39:47.007864"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Hungary"], ["created_at", "2020-05-17 20:39:47.013716"], ["updated_at", "2020-05-17 20:39:47.013716"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Iceland"], ["created_at", "2020-05-17 20:39:47.019161"], ["updated_at", "2020-05-17 20:39:47.019161"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ireland"], ["created_at", "2020-05-17 20:39:47.024638"], ["updated_at", "2020-05-17 20:39:47.024638"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Italy"], ["created_at", "2020-05-17 20:39:47.029491"], ["updated_at", "2020-05-17 20:39:47.029491"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kazakhstan"], ["created_at", "2020-05-17 20:39:47.034164"], ["updated_at", "2020-05-17 20:39:47.034164"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kosovo"], ["created_at", "2020-05-17 20:39:47.038670"], ["updated_at", "2020-05-17 20:39:47.038670"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Latvia"], ["created_at", "2020-05-17 20:39:47.057552"], ["updated_at", "2020-05-17 20:39:47.057552"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Liechtenstein"], ["created_at", "2020-05-17 20:39:47.063758"], ["updated_at", "2020-05-17 20:39:47.063758"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lithuania"], ["created_at", "2020-05-17 20:39:47.068683"], ["updated_at", "2020-05-17 20:39:47.068683"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Luxembourg"], ["created_at", "2020-05-17 20:39:47.073175"], ["updated_at", "2020-05-17 20:39:47.073175"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Malta"], ["created_at", "2020-05-17 20:39:47.077615"], ["updated_at", "2020-05-17 20:39:47.077615"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Moldova"], ["created_at", "2020-05-17 20:39:47.082284"], ["updated_at", "2020-05-17 20:39:47.082284"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Monaco"], ["created_at", "2020-05-17 20:39:47.087847"], ["updated_at", "2020-05-17 20:39:47.087847"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Montenegro"], ["created_at", "2020-05-17 20:39:47.092703"], ["updated_at", "2020-05-17 20:39:47.092703"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Netherlands"], ["created_at", "2020-05-17 20:39:47.097172"], ["updated_at", "2020-05-17 20:39:47.097172"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "North Macedonia"], ["created_at", "2020-05-17 20:39:47.102458"], ["updated_at", "2020-05-17 20:39:47.102458"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Norway"], ["created_at", "2020-05-17 20:39:47.107943"], ["updated_at", "2020-05-17 20:39:47.107943"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (1.2ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Poland"], ["created_at", "2020-05-17 20:39:47.113313"], ["updated_at", "2020-05-17 20:39:47.113313"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Portugal"], ["created_at", "2020-05-17 20:39:47.121097"], ["updated_at", "2020-05-17 20:39:47.121097"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Romania"], ["created_at", "2020-05-17 20:39:47.125982"], ["updated_at", "2020-05-17 20:39:47.125982"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Russia"], ["created_at", "2020-05-17 20:39:47.130475"], ["updated_at", "2020-05-17 20:39:47.130475"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "San Marino"], ["created_at", "2020-05-17 20:39:47.134559"], ["updated_at", "2020-05-17 20:39:47.134559"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Serbia"], ["created_at", "2020-05-17 20:39:47.139629"], ["updated_at", "2020-05-17 20:39:47.139629"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Slovakia"], ["created_at", "2020-05-17 20:39:47.143872"], ["updated_at", "2020-05-17 20:39:47.143872"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Slovenia"], ["created_at", "2020-05-17 20:39:47.148266"], ["updated_at", "2020-05-17 20:39:47.148266"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Spain"], ["created_at", "2020-05-17 20:39:47.152388"], ["updated_at", "2020-05-17 20:39:47.152388"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sweden"], ["created_at", "2020-05-17 20:39:47.157025"], ["updated_at", "2020-05-17 20:39:47.157025"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Switzerland"], ["created_at", "2020-05-17 20:39:47.161591"], ["updated_at", "2020-05-17 20:39:47.161591"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Turkey"], ["created_at", "2020-05-17 20:39:47.166948"], ["updated_at", "2020-05-17 20:39:47.166948"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ukraine"], ["created_at", "2020-05-17 20:39:47.172052"], ["updated_at", "2020-05-17 20:39:47.172052"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United Kingdom"], ["created_at", "2020-05-17 20:39:47.176531"], ["updated_at", "2020-05-17 20:39:47.176531"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Vatican City"], ["created_at", "2020-05-17 20:39:47.195687"], ["updated_at", "2020-05-17 20:39:47.195687"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "Demo User"], ["created_at", "2020-05-17 20:39:47.210116"], ["updated_at", "2020-05-17 20:39:47.210116"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttempt Create (1.1ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["total_score", 0], ["created_at", "2020-05-17 20:39:47.292058"], ["updated_at", "2020-05-17 20:39:47.292058"], ["user_id", 1]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/attempts" for ::1 at 2020-05-17 14:40:31 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mAttempt Load (3.7ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 200 OK in 136ms (Views: 108.2ms | ActiveRecord: 20.5ms | Allocations: 47221)
+
+
+Started GET "/api/v1/attempts" for ::1 at 2020-05-17 14:45:12 -0600
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mAttempt Load (1.4ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 15.2ms | Allocations: 42647)
+
+
+  
+NoMethodError (undefined method `all' for #<Attempt:0x00007f82f5c2db00>):
+  
+app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Started GET "/api/v1/attempts" for ::1 at 2020-05-17 14:45:12 -0600
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mAttempt Load (1.0ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.0ms | Allocations: 5475)
+
+
+  
+NoMethodError (undefined method `all' for #<Attempt:0x00007f82f79b9e58>):
+  
+app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Started GET "/api/v1/attempts" for ::1 at 2020-05-17 14:45:27 -0600
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mAttempt Load (0.6ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 89.6ms | ActiveRecord: 16.3ms | Allocations: 42940)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7283389696208071320)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToAttempts (20200517203001)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "vatican_city"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "united_kingdom"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "ukraine"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "turkey"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "switzerland"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "sweden"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "spain"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "slovenia"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "slovakia"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "serbia"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "san_marino"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "russia"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "romania"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "portugal"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "poland"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "norway"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "north_macedonia"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "netherlands"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "montenegro"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "monaco"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "moldova"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "malta"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "luxembourg"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "lithuania"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "liechtenstein"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "latvia"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "kosovo"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "kazakhstan"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "italy"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "ireland"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "iceland"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "hungary"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "greece"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "germany"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "georgia"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "france"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "finland"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "estonia"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "denmark"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "czechia"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "cyprus"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "croatia"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "bulgaria"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "bosnia"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "belgium"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "belarus"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "azerbaijan"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "austria"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "armenia"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "andorra"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" DROP COLUMN "albania"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200517203001"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7283389696208071320)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (223.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_development"[0m
+  [1m[35m (207.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_test"[0m
+  [1m[35m (565.0ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_development" ENCODING = 'unicode'[0m
+  [1m[35m (399.9ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200516215208)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744);
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 21:31:28.623247"], ["updated_at", "2020-05-17 21:31:28.623247"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "96e846141ecbb2e19b8e7069438af60291945aa4"], ["created_at", "2020-05-17 21:31:28.633472"], ["updated_at", "2020-05-17 21:31:28.633472"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200516215208)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744);
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 21:31:28.767178"], ["updated_at", "2020-05-17 21:31:28.767178"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-05-17 21:31:28.774776"], ["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "96e846141ecbb2e19b8e7069438af60291945aa4"], ["created_at", "2020-05-17 21:31:28.781914"], ["updated_at", "2020-05-17 21:31:28.781914"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7283389696208071320)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToAttempts (20200517203001)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "attempts" ADD "albania" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "andorra" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "austria" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "belarus" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "belgium" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "bosnia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "bulgaria" boolean[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "attempts" ADD "croatia" boolean[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "attempts" ADD "cyprus" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "czechia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "denmark" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "estonia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "finland" boolean[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "france" boolean[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" ADD "germany" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "greece" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "hungary" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "iceland" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "ireland" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "italy" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "kosovo" boolean[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "attempts" ADD "latvia" boolean[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "liechtenstein" boolean[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "lithuania" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "luxembourg" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "malta" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "moldova" boolean[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "attempts" ADD "monaco" boolean[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "montenegro" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "netherlands" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD "north_macedonia" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "norway" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "poland" boolean[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "attempts" ADD "portugal" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "romania" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "russia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "san_marino" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "serbia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "slovakia" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "slovenia" boolean[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "attempts" ADD "spain" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "sweden" boolean[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "attempts" ADD "switzerland" boolean[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD "turkey" boolean[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "attempts" ADD "ukraine" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD "united_kingdom" boolean[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "attempts" ADD "vatican_city" boolean[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200517203001"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7283389696208071320)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (197.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_development"[0m
+  [1m[35m (198.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_test"[0m
+  [1m[35m (579.8ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_development" ENCODING = 'unicode'[0m
+  [1m[35m (411.4ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "austria" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 21:31:48.061577"], ["updated_at", "2020-05-17 21:31:48.061577"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "d990a6ac1bc68f49dd7e48f4fcab357984036db6"], ["created_at", "2020-05-17 21:31:48.073258"], ["updated_at", "2020-05-17 21:31:48.073258"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "austria" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 21:31:48.190581"], ["updated_at", "2020-05-17 21:31:48.190581"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-05-17 21:31:48.198757"], ["key", "environment"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "d990a6ac1bc68f49dd7e48f4fcab357984036db6"], ["created_at", "2020-05-17 21:31:48.205871"], ["updated_at", "2020-05-17 21:31:48.205871"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (196.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_development"[0m
+  [1m[35m (202.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_test"[0m
+  [1m[35m (554.9ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_development" ENCODING = 'unicode'[0m
+  [1m[35m (407.8ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "austria" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 21:33:50.689906"], ["updated_at", "2020-05-17 21:33:50.689906"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "d990a6ac1bc68f49dd7e48f4fcab357984036db6"], ["created_at", "2020-05-17 21:33:50.700731"], ["updated_at", "2020-05-17 21:33:50.700731"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "austria" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-17 21:33:50.826321"], ["updated_at", "2020-05-17 21:33:50.826321"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-05-17 21:33:50.834876"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "d990a6ac1bc68f49dd7e48f4fcab357984036db6"], ["created_at", "2020-05-17 21:33:50.842191"], ["updated_at", "2020-05-17 21:33:50.842191"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAttempt Load (1.9ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (1.0ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Albania"], ["created_at", "2020-05-17 21:33:50.951360"], ["updated_at", "2020-05-17 21:33:50.951360"], ["map_id", 30]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Andorra"], ["created_at", "2020-05-17 21:33:50.962055"], ["updated_at", "2020-05-17 21:33:50.962055"], ["map_id", 45]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Austria"], ["created_at", "2020-05-17 21:33:50.966558"], ["updated_at", "2020-05-17 21:33:50.966558"], ["map_id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Belarus"], ["created_at", "2020-05-17 21:33:50.971877"], ["updated_at", "2020-05-17 21:33:50.971877"], ["map_id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Belgium"], ["created_at", "2020-05-17 21:33:50.977327"], ["updated_at", "2020-05-17 21:33:50.977327"], ["map_id", 33]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bosnia"], ["created_at", "2020-05-17 21:33:50.981437"], ["updated_at", "2020-05-17 21:33:50.981437"], ["map_id", 28]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bulgaria"], ["created_at", "2020-05-17 21:33:50.985361"], ["updated_at", "2020-05-17 21:33:50.985361"], ["map_id", 16]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Croatia"], ["created_at", "2020-05-17 21:33:50.989302"], ["updated_at", "2020-05-17 21:33:50.989302"], ["map_id", 27]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cyprus"], ["created_at", "2020-05-17 21:33:50.993222"], ["updated_at", "2020-05-17 21:33:50.993222"], ["map_id", 18]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.8ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Czechia"], ["created_at", "2020-05-17 21:33:50.998483"], ["updated_at", "2020-05-17 21:33:50.998483"], ["map_id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Denmark"], ["created_at", "2020-05-17 21:33:51.004055"], ["updated_at", "2020-05-17 21:33:51.004055"], ["map_id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Estonia"], ["created_at", "2020-05-17 21:33:51.008865"], ["updated_at", "2020-05-17 21:33:51.008865"], ["map_id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Finland"], ["created_at", "2020-05-17 21:33:51.013202"], ["updated_at", "2020-05-17 21:33:51.013202"], ["map_id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "France"], ["created_at", "2020-05-17 21:33:51.017313"], ["updated_at", "2020-05-17 21:33:51.017313"], ["map_id", 43]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Germany"], ["created_at", "2020-05-17 21:33:51.021619"], ["updated_at", "2020-05-17 21:33:51.021619"], ["map_id", 19]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Greece"], ["created_at", "2020-05-17 21:33:51.026084"], ["updated_at", "2020-05-17 21:33:51.026084"], ["map_id", 25]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hungary"], ["created_at", "2020-05-17 21:33:51.031429"], ["updated_at", "2020-05-17 21:33:51.031429"], ["map_id", 21]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Iceland"], ["created_at", "2020-05-17 21:33:51.036867"], ["updated_at", "2020-05-17 21:33:51.036867"], ["map_id", 31]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ireland"], ["created_at", "2020-05-17 21:33:51.042262"], ["updated_at", "2020-05-17 21:33:51.042262"], ["map_id", 39]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Italy"], ["created_at", "2020-05-17 21:33:51.047886"], ["updated_at", "2020-05-17 21:33:51.047886"], ["map_id", 36]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kosovo"], ["created_at", "2020-05-17 21:33:51.052707"], ["updated_at", "2020-05-17 21:33:51.052707"], ["map_id", 23]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Latvia"], ["created_at", "2020-05-17 21:33:51.056920"], ["updated_at", "2020-05-17 21:33:51.056920"], ["map_id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Liechtenstein"], ["created_at", "2020-05-17 21:33:51.061054"], ["updated_at", "2020-05-17 21:33:51.061054"], ["map_id", 42]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "lithuania"], ["created_at", "2020-05-17 21:33:51.065118"], ["updated_at", "2020-05-17 21:33:51.065118"], ["map_id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Luxembourg"], ["created_at", "2020-05-17 21:33:51.081770"], ["updated_at", "2020-05-17 21:33:51.081770"], ["map_id", 41]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Malta"], ["created_at", "2020-05-17 21:33:51.087630"], ["updated_at", "2020-05-17 21:33:51.087630"], ["map_id", 38]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Moldova"], ["created_at", "2020-05-17 21:33:51.093081"], ["updated_at", "2020-05-17 21:33:51.093081"], ["map_id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Monaco"], ["created_at", "2020-05-17 21:33:51.097400"], ["updated_at", "2020-05-17 21:33:51.097400"], ["map_id", 44]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Montenegro"], ["created_at", "2020-05-17 21:33:51.101934"], ["updated_at", "2020-05-17 21:33:51.101934"], ["map_id", 29]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Netherlands"], ["created_at", "2020-05-17 21:33:51.106095"], ["updated_at", "2020-05-17 21:33:51.106095"], ["map_id", 32]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "North Macedonia"], ["created_at", "2020-05-17 21:33:51.110114"], ["updated_at", "2020-05-17 21:33:51.110114"], ["map_id", 24]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Norway"], ["created_at", "2020-05-17 21:33:51.114051"], ["updated_at", "2020-05-17 21:33:51.114051"], ["map_id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Poland"], ["created_at", "2020-05-17 21:33:51.118381"], ["updated_at", "2020-05-17 21:33:51.118381"], ["map_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Portugal"], ["created_at", "2020-05-17 21:33:51.122487"], ["updated_at", "2020-05-17 21:33:51.122487"], ["map_id", 46]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Romania"], ["created_at", "2020-05-17 21:33:51.126791"], ["updated_at", "2020-05-17 21:33:51.126791"], ["map_id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Russia"], ["created_at", "2020-05-17 21:33:51.130961"], ["updated_at", "2020-05-17 21:33:51.130961"], ["map_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "San Marino"], ["created_at", "2020-05-17 21:33:51.135018"], ["updated_at", "2020-05-17 21:33:51.135018"], ["map_id", 35]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Serbia"], ["created_at", "2020-05-17 21:33:51.139342"], ["updated_at", "2020-05-17 21:33:51.139342"], ["map_id", 22]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Slovakia"], ["created_at", "2020-05-17 21:33:51.143426"], ["updated_at", "2020-05-17 21:33:51.143426"], ["map_id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Slovenia"], ["created_at", "2020-05-17 21:33:51.147335"], ["updated_at", "2020-05-17 21:33:51.147335"], ["map_id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Spain"], ["created_at", "2020-05-17 21:33:51.151461"], ["updated_at", "2020-05-17 21:33:51.151461"], ["map_id", 47]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sweden"], ["created_at", "2020-05-17 21:33:51.155546"], ["updated_at", "2020-05-17 21:33:51.155546"], ["map_id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Switzerland"], ["created_at", "2020-05-17 21:33:51.159941"], ["updated_at", "2020-05-17 21:33:51.159941"], ["map_id", 34]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Turkey"], ["created_at", "2020-05-17 21:33:51.164741"], ["updated_at", "2020-05-17 21:33:51.164741"], ["map_id", 17]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.9ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ukraine"], ["created_at", "2020-05-17 21:33:51.170042"], ["updated_at", "2020-05-17 21:33:51.170042"], ["map_id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "United Kingdom"], ["created_at", "2020-05-17 21:33:51.176074"], ["updated_at", "2020-05-17 21:33:51.176074"], ["map_id", 40]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Vatican City"], ["created_at", "2020-05-17 21:33:51.180146"], ["updated_at", "2020-05-17 21:33:51.180146"], ["map_id", 37]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "Demo User"], ["created_at", "2020-05-17 21:33:51.191716"], ["updated_at", "2020-05-17 21:33:51.191716"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttempt Create (1.2ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["total_score", 0], ["created_at", "2020-05-17 21:33:51.278359"], ["updated_at", "2020-05-17 21:33:51.278359"], ["user_id", 1]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries" LIMIT $1[0m  [["LIMIT", 11]]
