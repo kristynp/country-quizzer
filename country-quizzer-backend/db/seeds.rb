@@ -1,0 +1,68 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+Attempt.destroy_all
+
+albania = Country.create(name: 'Albania')
+andorra = Country.create(name: 'Andorra')
+armenia = Country.create(name: 'Armenia')
+austria = Country.create(name: 'Austria')
+azerbaijan = Country.create(name: 'Azerbaijan')
+belarus = Country.create(name: 'Belarus')
+belgium = Country.create(name: 'Belgium')
+bosnia = Country.create(name: 'Bosnia')
+bulgaria = Country.create(name: 'Bulgaria')
+croatia = Country.create(name: 'Croatia')
+cyprus = Country.create(name: 'Cyprus')
+czechia = Country.create(name: 'Czechia')
+denmark = Country.create(name: 'Denmark')
+estonia = Country.create(name: 'Estonia')
+finland = Country.create(name: 'Finland')
+france = Country.create(name: 'France')
+georgia = Country.create(name: 'Georgia')
+germany = Country.create(name: 'Germany')
+greece = Country.create(name: 'Greece')
+hungary = Country.create(name: 'Hungry')
+iceland = Country.create(name: 'Iceland')
+ireland = Country.create(name: 'Ireland')
+italy = Country.create(name: 'Italy')
+armenia = Country.create(name: 'Armenia')
+kazakhstan = Country.create(name: 'Kazakhstan')
+kosovo = Country.create(name: 'Kosovo')
+latvia = Country.create(name: 'Latvia')
+liechtenstein = Country.create(name: 'Liechtenstein')
+lithuania = Country.create(name: 'Lithuania')
+luxumbourg = Country.create(name: 'Luxembourg')
+malta = Country.create(name: 'Malta')
+moldova = Country.create(name: 'Moldova')
+monaco = Country.create(name: 'Monaco')
+montenegro = Country.create(name: 'Montenegro')
+netherlands = Country.create(name: 'Netherlands')
+north_macedonia = Country.create(name: 'North Macedonia')
+norway = Country.create(name: 'Norway')
+poland = Country.create(name: 'Poland')
+portugal = Country.create(name: 'Portugal')
+romania = Country.create(name: 'Romania')
+russia = Country.create(name: 'Russia')
+san_marino = Country.create(name: 'San Marino')
+serbia = Country.create(name: 'Serbia')
+slovakia = Country.create(name: 'Slovakia')
+slovenia = Country.create(name: 'Slovenia')
+spain = Country.create(name: 'Spain')
+sweden = Country.create(name: 'Sweden')
+switzerland = Country.create(name: 'Switzerland')
+turkey = Country.create(name: 'Turkey')
+ukraine = Country.create(name: 'Ukraine')
+united_kingdom = Country.create(name: 'United Kingdom')
+vatican_city = Country.create(name: 'Vatican City')
+
+demo_user = User.create(username: 'Demo User')
+
+first_attempt = Attempt.create(total_score: 0, user_id: 1)
+
