@@ -15,8 +15,30 @@ function submitQuiz(e) {
   e.preventDefault();
   const quizInputs = document.getElementsByClassName('quiz-input');
   const name = document.getElementById('body-header').innerHTML.split(', ')[1].slice(0,-1);
-  
-  console.log(user);
+  const attemptObject = makeAttemptObject(quizInputs, name);
+  attemptPostFetch(attemptObject);
+}
+
+function makeAttemptObject(quizInputs, name) {
+  let attemptObj = {};
+  attemptObj['username'] = name;
+  for (const input of quizInputs) {
+    attemptObj[input.name] = input.value
+  }
+  return attemptObj;
+}
+
+function attemptPostFetch(attemptObj) { 
+  console.log('in attemptPostFetch');
+  // fetch(attempts_url, {
+  //   method: "POST",
+  //   headers: {"Content-Type": "application/json", "Accept": "application/json"},
+  //   body: JSON.stringify(attemptObject)
+  // }) 
+  // .then(response => response.json())
+  // .then(user => {
+  //   renderUser(user);
+  // })
 }
 
 function findOrCreateUser(e) {
