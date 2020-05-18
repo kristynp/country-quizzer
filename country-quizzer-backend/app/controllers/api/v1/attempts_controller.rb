@@ -16,6 +16,6 @@ class Api::V1::AttemptsController < ApplicationController
   private 
 
   def attempt_params 
-    params.require(:attempt).permit(:total_score, :user_id)
+    params.require(:attempt).permit(:username, :total_score, :albania, :andorra, :austria, :belarus, :belgium, :bosnia, :bulgaria, :croatia, :cyprus, :czechia, :denmark, :estonia, :finland, :france, :germany, :greece, :hungary, :iceland, :ireland, :italy, :kosovo, :latvia, :liechtenstein, :lithuania, :luxembourg, :malta, :moldova, :monaco, :montenegro, :netherlands, :north_macedonia, :norway, :poland, :portugal, :romania, :russia, :san_marino, :serbia, :slovakia, :slovenia, :spain, :sweden, :switzerland, :turkey, :ukraine, :united_kingdom, :vatican_city)
   end
 end

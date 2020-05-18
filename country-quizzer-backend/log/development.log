@@ -2261,3 +2261,360 @@ Processing by Api::V1::CountriesController#index as */*
 Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 1.1ms | Allocations: 5473)
 
 
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:24:32 -0600
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 27ms (Views: 0.4ms | ActiveRecord: 21.3ms | Allocations: 4266)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:24:41 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"splat", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 18.0ms | Allocations: 190)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: attempt):
+  
+app/controllers/api/v1/attempts_controller.rb:20:in `attempt_params'
+app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:25:12 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"splat", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 4.2ms | Allocations: 189)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: attempt):
+  
+app/controllers/api/v1/attempts_controller.rb:20:in `attempt_params'
+app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:25:17 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 11ms (Views: 0.3ms | ActiveRecord: 6.7ms | Allocations: 3538)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:25:24 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 168)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: attempt):
+  
+app/controllers/api/v1/attempts_controller.rb:20:in `attempt_params'
+app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 12:26:12 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 7.6ms | Allocations: 9233)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:26:27 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 12ms (Views: 0.3ms | ActiveRecord: 6.0ms | Allocations: 3499)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:26:31 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 6ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 1088)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:26:36 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 204 No Content in 0ms (ActiveRecord: 5.3ms | Allocations: 104)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 12:27:46 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 34ms (Views: 19.9ms | ActiveRecord: 10.0ms | Allocations: 9141)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:27:52 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 24ms (Views: 0.3ms | ActiveRecord: 19.8ms | Allocations: 3489)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:27:56 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 4.1ms | Allocations: 492)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007ff26bdb5d20>
+Did you mean?  try):
+  
+app/controllers/api/v1/attempts_controller.rb:8:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:30:40 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1073)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:30:46 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 466)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007ff26bf9ca80>
+Did you mean?  try):
+  
+app/controllers/api/v1/attempts_controller.rb:8:in `create'
+Started GET "/api/v1/attempts" for ::1 at 2020-05-18 12:30:57 -0600
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mAttempt Load (8.0ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 200 OK in 104ms (Views: 80.3ms | ActiveRecord: 13.3ms | Allocations: 38265)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-05-18 12:30:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:33:38 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 557)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007ff26bc230c0>
+Did you mean?  try):
+  
+app/controllers/api/v1/attempts_controller.rb:8:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:33:43 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 4ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1138)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:33:49 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 546)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007ff26be153d8>
+Did you mean?  try):
+  
+app/controllers/api/v1/attempts_controller.rb:8:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:35:23 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 20ms (Views: 0.5ms | ActiveRecord: 15.9ms | Allocations: 3554)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:35:28 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 103969ms (ActiveRecord: 4.6ms | Allocations: 140656)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:37:20 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 135ms (Views: 8.4ms | ActiveRecord: 12.3ms | Allocations: 805167)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:37:27 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.9ms | Allocations: 58957)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/attempts_controller.rb:16:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 12:39:44 -0600
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 22ms (Views: 0.6ms | ActiveRecord: 12.5ms | Allocations: 4267)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 12:39:48 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"username"=>"kpac", "field_1"=>"Russia", "field_2"=>"somewhere", "field_3"=>"", "field_4"=>"", "field_5"=>"", "field_6"=>"", "field_7"=>"", "field_8"=>"", "field_9"=>"", "field_10"=>"", "field_11"=>"", "field_12"=>"", "field_13"=>"", "field_14"=>"", "field_15"=>"", "field_16"=>"", "field_17"=>"", "field_18"=>"", "field_19"=>"", "field_20"=>"", "field_21"=>"", "field_22"=>"", "field_23"=>"", "field_24"=>"", "field_25"=>"", "field_26"=>"", "field_27"=>"", "field_28"=>"", "field_29"=>"", "field_30"=>"", "field_31"=>"", "field_32"=>"", "field_33"=>"", "field_34"=>"", "field_35"=>"", "field_36"=>"", "field_37"=>"", "field_38"=>"", "field_39"=>"", "field_40"=>"", "field_41"=>"", "field_42"=>"", "field_43"=>"", "field_44"=>"", "field_45"=>"", "field_46"=>"", "field_47"=>"", "attempt"=>{}}
+Completed 500 Internal Server Error in 4755889ms (ActiveRecord: 4.5ms | Allocations: 121666)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/attempts_controller.rb:16:in `create'
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 13:59:05 -0600
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 13:59:05 -0600
+Started GET "/api/v1/attempts" for ::1 at 2020-05-18 13:59:15 -0600
+Processing by Api::V1::CountriesController#index as HTML
+  [1m[36mCountry Load (23.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Processing by Api::V1::CountriesController#index as HTML
+  [1m[36mCountry Load (17.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 1292ms (Views: 1256.3ms | ActiveRecord: 17.3ms | Allocations: 3248508)
+
+
+Completed 200 OK in 1960ms (Views: 1741.7ms | ActiveRecord: 145.9ms | Allocations: 5356827)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 13:59:20 -0600
+Processing by Api::V1::CountriesController#index as HTML
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mCountry Load (125.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  [1m[36mAttempt Load (12.9ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 200 OK in 1295ms (Views: 830.7ms | ActiveRecord: 412.3ms | Allocations: 4904653)
+
+
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 200 OK in 2889ms (Views: 2506.1ms | ActiveRecord: 329.0ms | Allocations: 10951040)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 14:07:04 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 148ms (Views: 9.3ms | ActiveRecord: 3.5ms | Allocations: 956798)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 14:11:22 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 76ms (Views: 9.4ms | ActiveRecord: 5.1ms | Allocations: 507316)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 14:19:58 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 88ms (Views: 5.7ms | ActiveRecord: 3.3ms | Allocations: 557776)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 14:20:04 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 376ms (Views: 354.2ms | ActiveRecord: 1.7ms | Allocations: 2749483)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 14:20:53 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 64ms (Views: 9.0ms | ActiveRecord: 1.5ms | Allocations: 505523)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 14:20:58 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (6.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 316ms (Views: 301.9ms | ActiveRecord: 6.2ms | Allocations: 2047773)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 14:21:45 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 82ms (Views: 9.0ms | ActiveRecord: 1.7ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 14:21:51 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 302ms (Views: 290.0ms | ActiveRecord: 2.8ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 14:23:01 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 85ms (Views: 11.8ms | ActiveRecord: 6.7ms | Allocations: 505526)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 14:23:05 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (13.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 291ms (Views: 274.0ms | ActiveRecord: 13.2ms | Allocations: 2045529)
+
+

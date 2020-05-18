@@ -1,5 +1,7 @@
 const countries_url = "http://localhost:3000/api/v1/countries";
 const users_url = "http://localhost:3000/api/v1/users";
+const attempts_url = "http://localhost:3000/api/v1/attempts";
+let countries_fetch = {};
 
 document.addEventListener('DOMContentLoaded', () => {
   const wordbankBtn = document.getElementById('wordbank-btn');
@@ -16,29 +18,39 @@ function submitQuiz(e) {
   const quizInputs = document.getElementsByClassName('quiz-input');
   const name = document.getElementById('body-header').innerHTML.split(', ')[1].slice(0,-1);
   const attemptObject = makeAttemptObject(quizInputs, name);
-  attemptPostFetch(attemptObject);
+  //attemptPostFetch(attemptObject);
 }
 
 function makeAttemptObject(quizInputs, name) {
   let attemptObj = {};
+  let countriesObj = {}; // {1: "Russia, 2: "Finland", ...}
+
   attemptObj['username'] = name;
+
+  fetch(countries_url)
+  .then(response => response.json())
+  .then(countries => {
+    countries.data.forEach(country => {
+      countriesObj[country.attributes.map_id] = country.attributes.name
+    });
+  });
+  
   for (const input of quizInputs) {
-    attemptObj[input.name] = input.value
+    
   }
-  return attemptObj;
+  console.log(attemptObj);
 }
 
 function attemptPostFetch(attemptObj) { 
-  console.log('in attemptPostFetch');
-  // fetch(attempts_url, {
-  //   method: "POST",
-  //   headers: {"Content-Type": "application/json", "Accept": "application/json"},
-  //   body: JSON.stringify(attemptObject)
-  // }) 
+  fetch(attempts_url, {
+    method: "POST",
+    headers: {"Content-Type": "application/json", "Accept": "application/json"},
+    body: JSON.stringify(attemptObj)
+  }) 
   // .then(response => response.json())
-  // .then(user => {
-  //   renderUser(user);
-  // })
+  // .then(attempt => {
+  //   console.log(attempt);
+  //})
 }
 
 function findOrCreateUser(e) {
