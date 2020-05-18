@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function submitQuiz(e) {
   e.preventDefault();
   const quizInputs = document.getElementsByClassName('quiz-input');
-  console.log(quizInputs);
-  console.log(session[user_id]);
+  const name = document.getElementById('body-header').innerHTML.split(', ')[1].slice(0,-1);
+  
+  console.log(user);
 }
 
 function findOrCreateUser(e) {
