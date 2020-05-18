@@ -1,4 +1,5 @@
-const countries_url = "http://localhost:3000/api/v1/countries"
+const countries_url = "http://localhost:3000/api/v1/countries";
+const users_url = "http://localhost:3000/api/v1/users";
 
 document.addEventListener('DOMContentLoaded', () => {
   const wordbankBtn = document.getElementById('wordbank-btn');
@@ -40,6 +41,16 @@ function findOrCreateUser(e) {
 }
 
 function userPostFetch(username) {
-  console.log('in userPostFetch function');
-  console.log(username);
+
+  fetch(users_url, {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(bodyData)
+  }) 
+  .then(response => response.json())
+  .then(user => {
+    console.log(user);
+  })
+
+
 }
