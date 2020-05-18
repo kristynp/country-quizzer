@@ -4,10 +4,19 @@ const users_url = "http://localhost:3000/api/v1/users";
 document.addEventListener('DOMContentLoaded', () => {
   const wordbankBtn = document.getElementById('wordbank-btn');
   const usernameForm = document.getElementById('username-form');
+  const quizForm = document.getElementById('quiz-form');
+
   wordbankBtn.addEventListener('click', handleWordbank);
-  usernameForm.addEventListener('submit', (e) => 
-    findOrCreateUser(e));
+  usernameForm.addEventListener('submit', (e) => findOrCreateUser(e));
+  quizForm.addEventListener('submit', (e) => submitQuiz(e));
 });
+
+function submitQuiz(e) {
+  e.preventDefault();
+  const quizInputs = document.getElementsByClassName('quiz-input');
+  console.log(quizInputs);
+  console.log(session[user_id]);
+}
 
 function findOrCreateUser(e) {
   e.preventDefault();
