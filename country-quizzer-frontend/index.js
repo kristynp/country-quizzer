@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('wordbank-btn').addEventListener('click', handleWordbank);
 });
 
+
 function handleWordbank(){
   let button = document.getElementById('wordbank-btn');
   let wordbankUl = document.getElementById('wordbank-ul');
