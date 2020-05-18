@@ -1,7 +1,12 @@
 const countries_url = "http://localhost:3000/api/v1/countries"
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('wordbank-btn').addEventListener('click', handleWordbank);
+  const wordbankBtn = document.getElementById('wordbank-btn');
+  const usernameForm = document.getElementById('username-form');
+  wordbankBtn.addEventListener('click', handleWordbank);
+  usernameForm.addEventListener('submit', (e) => 
+    findOrCreateUser(e));
+
 });
 
 
@@ -28,4 +33,13 @@ function handleWordbank(){
   }
 }
 
+function findOrCreateUser(e) {
+  e.preventDefault();
+  const name = document.getElementById('input-username').value;
+  userPostFetch(name);
+}
 
+function userPostFetch(username) {
+  console.log('in userPostFetch function');
+  console.log(username);
+}
