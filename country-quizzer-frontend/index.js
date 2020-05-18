@@ -23,22 +23,50 @@ function submitQuiz(e) {
 
 function makeAttemptObject(quizInputs, name) {
   let attemptObj = {};
-  let countriesObj = {}; // {1: "Russia, 2: "Finland", ...}
-
   attemptObj['username'] = name;
 
   fetch(countries_url)
   .then(response => response.json())
   .then(countries => {
+    let countriesObj = {}; // {1: "Russia, 2: "Finland", ...}
     countries.data.forEach(country => {
-      countriesObj[country.attributes.map_id] = country.attributes.name
+      const mapNum = country.attributes.map_id;
+      const cName = country.attributes.name;
+      countriesObj[mapNum] = cName;
     });
+    for (const input of quizInputs) { 
+      const mapId = input.name.split('_')[1]; //gives map id #
+      const countriesName = countriesObj[mapId].toLowerCase()
+      const countriesNameNoSpace = countriesName.replace(/[^A-Za-z]/g, "");
+      const inputName = input.value.toLowerCase();
+      const inputNameNoSpace = input.value.toLowerCase().replace(/[^A-Za-z]/g, "")
+      if (countriesNameNoSpace === inputNameNoSpace) {
+        // compare input name with input name no space.
+        if (inputName === inputNameNoSpace) {
+        // if they are the same, use input name as key value is true
+          attemptObj[inputName] = true;
+          console.log(attemptObj);
+        } else {
+        // if they are NOT the same, substitue the " " for '_' for setting key, and value as true
+          const adjustedName = inputName.replace(/[^A-Za-z]/g, "_");
+          attemptObj[adjustedName] = true;
+         }
+      } else {
+        //compare value of country name with country name no space
+        if (countriesName === countriesNameNoSpace) {
+        // if they are the same, use country name as key, value is false
+        attemptObj[countriesName] = false;
+        } else {
+        //if they are NOT the same, substitue the " " for '_' for setting key, and value as false
+        const adjustedName = countriesName.replace(/[^A-Za-z]/g, "_");
+        attemptObj[adjustedName] = false;
+        }
+      }
+    }
   });
-  
-  for (const input of quizInputs) {
-    
-  }
-  console.log(attemptObj);
+  //! filter return object to get total score (number of countries with true values)
+  //! add total score to attemptObj
+  //! return attemptObj
 }
 
 function attemptPostFetch(attemptObj) { 
