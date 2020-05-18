@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :countries, only: [:index]
       resources :attempts, only: [:index, :create]
-      resources :users, only: [:index]
+      resources :users, only: [:index, :create]
     end
   end
 

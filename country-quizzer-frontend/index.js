@@ -1,9 +1,38 @@
-const countries_url = "http://localhost:3000/api/v1/countries"
+const countries_url = "http://localhost:3000/api/v1/countries";
+const users_url = "http://localhost:3000/api/v1/users";
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('wordbank-btn').addEventListener('click', handleWordbank);
+  const wordbankBtn = document.getElementById('wordbank-btn');
+  const usernameForm = document.getElementById('username-form');
+  wordbankBtn.addEventListener('click', handleWordbank);
+  usernameForm.addEventListener('submit', (e) => 
+    findOrCreateUser(e));
 });
 
+function findOrCreateUser(e) {
+  e.preventDefault();
+  const name = document.getElementById('input-username').value;
+  userPostFetch(name);
+}
+
+function userPostFetch(name) {
+  fetch(users_url, {
+    method: "POST",
+    headers: {"Content-Type": "application/json", "Accept": "application/json"},
+    body: JSON.stringify({username: name})
+  }) 
+  .then(response => response.json())
+  .then(user => {
+    renderUser(user);
+  })
+}
+
+function renderUser(user) {
+  const h1 = document.getElementById('body-header');
+  const formDiv = document.getElementById('user-form-div');
+  h1.innerHTML = `Good luck, ${user.username}!`
+  formDiv.remove();
+}
 
 function handleWordbank(){
   let button = document.getElementById('wordbank-btn');
