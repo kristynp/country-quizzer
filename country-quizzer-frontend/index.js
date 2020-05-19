@@ -18,7 +18,6 @@ function submitQuiz(e) {
   const quizInputs = document.getElementsByClassName('quiz-input');
   const name = document.getElementById('body-header').innerHTML.split(', ')[1].slice(0,-1);
   const attemptObject = makeAttemptObject(quizInputs, name);
-  //attemptPostFetch(attemptObject);
 }
 
 function makeAttemptObject(quizInputs, name) {
@@ -92,9 +91,16 @@ function attemptPostFetch(attemptObj) {
   }) 
   .then(response => response.json())
   .then(attempt => {
-    console.log(attempt);
+    let parentUl = document.getElementById('quiz-results-ul');
+    let attemptLi = document.createElement('li');
+    let prettyDate = attempt.created_at.split('T')[0];
+    let prettyTime = attempt.created_at.split('T')[1].split('.')[0];
+    attemptLi.innerHTML = `Date: ${prettyDate} Time: ${prettyTime} Score: ${attempt.total_score}` 
+    parentUl.appendChild(attemptLi);
   })
 }
+
+
 
 function findOrCreateUser(e) {
   e.preventDefault();
