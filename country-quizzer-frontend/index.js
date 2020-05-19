@@ -22,12 +22,27 @@ function submitQuiz(e) {
 }
 
 function makeAttemptObject(quizInputs, name) {
-  let attemptObj = {};
-  attemptObj['username'] = name;
+  handleQuizInputs(quizInputs)
+  .then(attemptObj => {
+    let count = 0;
+    for (const key in attemptObj) {
+      if (attemptObj[key] === true) {
+        count += 1;
+      }
+    }
+    attemptObj.total_score = count;
+    attemptObj.username = name;
+    return attemptObj;
+  })
+  .then(res => console.log(res))
 
-  fetch(countries_url)
+}
+
+function handleQuizInputs(quizInputs) {
+  return fetch(countries_url)
   .then(response => response.json())
   .then(countries => {
+    let attemptObj = {};
     let countriesObj = {}; // {1: "Russia, 2: "Finland", ...}
     countries.data.forEach(country => {
       const mapNum = country.attributes.map_id;
@@ -45,7 +60,6 @@ function makeAttemptObject(quizInputs, name) {
         if (inputName === inputNameNoSpace) {
         // if they are the same, use input name as key value is true
           attemptObj[inputName] = true;
-          console.log(attemptObj);
         } else {
         // if they are NOT the same, substitue the " " for '_' for setting key, and value as true
           const adjustedName = inputName.replace(/[^A-Za-z]/g, "_");
@@ -63,10 +77,8 @@ function makeAttemptObject(quizInputs, name) {
         }
       }
     }
-  });
-  //! filter return object to get total score (number of countries with true values)
-  //! add total score to attemptObj
-  //! return attemptObj
+    return attemptObj; 
+  })
 }
 
 function attemptPostFetch(attemptObj) { 

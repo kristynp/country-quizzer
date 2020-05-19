@@ -3278,3 +3278,797 @@ Processing by Api::V1::CountriesController#index as */*
 Completed 200 OK in 237ms (Views: 232.6ms | ActiveRecord: 1.3ms | Allocations: 2033112)
 
 
+Started POST "/api/v1/users" for ::1 at 2020-05-18 17:56:31 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 93ms (Views: 11.7ms | ActiveRecord: 3.0ms | Allocations: 560078)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 17:56:39 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 261ms (Views: 254.3ms | ActiveRecord: 1.9ms | Allocations: 2037068)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 17:57:18 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 64ms (Views: 8.8ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 17:57:25 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 295ms (Views: 289.3ms | ActiveRecord: 1.9ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 17:59:37 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 69ms (Views: 9.1ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 17:59:43 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 272ms (Views: 258.6ms | ActiveRecord: 5.8ms | Allocations: 2041661)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:00:42 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 8.9ms | ActiveRecord: 1.6ms | Allocations: 506006)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:00:49 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 267ms (Views: 262.0ms | ActiveRecord: 1.6ms | Allocations: 2028108)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:01:23 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 5.5ms | ActiveRecord: 5.4ms | Allocations: 505236)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:01:30 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 281ms (Views: 271.2ms | ActiveRecord: 1.6ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:02:17 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 70ms (Views: 9.1ms | ActiveRecord: 1.6ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:02:25 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (7.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 277ms (Views: 261.1ms | ActiveRecord: 7.8ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:02:48 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 71ms (Views: 8.5ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:02:55 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 287ms (Views: 282.5ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:03:25 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 73ms (Views: 8.9ms | ActiveRecord: 5.3ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:03:32 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 284ms (Views: 272.9ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:04:05 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 73ms (Views: 8.5ms | ActiveRecord: 1.3ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:04:11 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 287ms (Views: 277.1ms | ActiveRecord: 2.3ms | Allocations: 2032995)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:04:27 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 74ms (Views: 8.1ms | ActiveRecord: 5.3ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:04:30 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 295ms (Views: 281.0ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:05:11 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 76ms (Views: 8.6ms | ActiveRecord: 1.3ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:05:16 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 390ms (Views: 381.6ms | ActiveRecord: 1.5ms | Allocations: 2045530)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:08:54 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 66ms (Views: 9.6ms | ActiveRecord: 1.6ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:08:57 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 255ms (Views: 249.4ms | ActiveRecord: 1.5ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:09:38 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 67ms (Views: 8.4ms | ActiveRecord: 2.2ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:09:44 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 255ms (Views: 249.5ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:10:07 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 70ms (Views: 9.5ms | ActiveRecord: 1.9ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:10:12 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 304ms (Views: 298.1ms | ActiveRecord: 1.5ms | Allocations: 2044940)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:27:38 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 87ms (Views: 10.2ms | ActiveRecord: 6.9ms | Allocations: 558142)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:27:42 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 274ms (Views: 264.1ms | ActiveRecord: 1.8ms | Allocations: 2054604)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:28:07 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 67ms (Views: 8.6ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:28:10 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 267ms (Views: 261.8ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:28:30 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 73ms (Views: 10.0ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:28:36 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 275ms (Views: 270.1ms | ActiveRecord: 1.4ms | Allocations: 2047704)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:29:23 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 8.4ms | ActiveRecord: 2.2ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:29:26 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 283ms (Views: 274.0ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:29:41 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 68ms (Views: 8.7ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:29:45 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 285ms (Views: 276.1ms | ActiveRecord: 1.8ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:31:37 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 70ms (Views: 9.1ms | ActiveRecord: 2.1ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:31:41 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (7.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 274ms (Views: 259.7ms | ActiveRecord: 7.8ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:32:06 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 74ms (Views: 8.2ms | ActiveRecord: 7.6ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:32:09 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 283ms (Views: 277.7ms | ActiveRecord: 1.4ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 18:32:25 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 9.4ms | ActiveRecord: 1.3ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 18:32:29 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 295ms (Views: 282.3ms | ActiveRecord: 1.5ms | Allocations: 2045651)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:24:16 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 89ms (Views: 10.9ms | ActiveRecord: 8.4ms | Allocations: 557779)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:24:20 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (3.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 309ms (Views: 300.3ms | ActiveRecord: 3.0ms | Allocations: 2054604)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:25:57 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 82ms (Views: 10.4ms | ActiveRecord: 1.7ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:26:00 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 749ms (Views: 736.4ms | ActiveRecord: 1.9ms | Allocations: 2047772)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:27:47 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 77ms (Views: 10.6ms | ActiveRecord: 1.6ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:27:50 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 302ms (Views: 291.3ms | ActiveRecord: 1.9ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:28:20 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 80ms (Views: 11.5ms | ActiveRecord: 2.1ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:28:23 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 382ms (Views: 375.5ms | ActiveRecord: 1.7ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:28:56 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 79ms (Views: 10.4ms | ActiveRecord: 6.2ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:28:59 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 314ms (Views: 298.0ms | ActiveRecord: 2.0ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:38:07 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 112ms (Views: 12.3ms | ActiveRecord: 8.4ms | Allocations: 557776)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:38:11 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 312ms (Views: 301.0ms | ActiveRecord: 2.0ms | Allocations: 2055358)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:39:16 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 85ms (Views: 10.8ms | ActiveRecord: 1.6ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:39:20 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (3.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 474ms (Views: 463.6ms | ActiveRecord: 3.3ms | Allocations: 2047772)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:44:05 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 85ms (Views: 10.5ms | ActiveRecord: 6.2ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:44:09 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 337ms (Views: 331.0ms | ActiveRecord: 1.7ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:45:10 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 88ms (Views: 11.4ms | ActiveRecord: 1.8ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:45:14 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 348ms (Views: 341.4ms | ActiveRecord: 1.6ms | Allocations: 2047775)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:46:27 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 82ms (Views: 10.3ms | ActiveRecord: 1.8ms | Allocations: 507536)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:46:30 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 338ms (Views: 330.5ms | ActiveRecord: 1.7ms | Allocations: 2048510)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:56:58 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 174ms (Views: 14.4ms | ActiveRecord: 9.4ms | Allocations: 557778)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:57:02 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 372ms (Views: 361.4ms | ActiveRecord: 2.2ms | Allocations: 2056850)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:58:18 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 82ms (Views: 10.4ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:58:21 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 445ms (Views: 438.0ms | ActiveRecord: 2.7ms | Allocations: 2035498)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 20:59:03 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 5.3ms | ActiveRecord: 1.9ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 20:59:06 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 277ms (Views: 266.3ms | ActiveRecord: 1.6ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:00:18 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 9.3ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:00:21 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (6.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 297ms (Views: 281.8ms | ActiveRecord: 6.3ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:01:55 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 80ms (Views: 10.2ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:01:59 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 286ms (Views: 278.4ms | ActiveRecord: 1.7ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:02:39 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 66ms (Views: 9.4ms | ActiveRecord: 1.5ms | Allocations: 505236)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:02:43 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 299ms (Views: 288.6ms | ActiveRecord: 1.7ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:04:25 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 83ms (Views: 9.9ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:04:28 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 564ms (Views: 553.8ms | ActiveRecord: 5.2ms | Allocations: 2047775)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:04:47 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 10.8ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:04:50 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 317ms (Views: 310.4ms | ActiveRecord: 2.2ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:05:09 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 74ms (Views: 11.0ms | ActiveRecord: 1.7ms | Allocations: 507486)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:05:13 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 291ms (Views: 277.0ms | ActiveRecord: 5.9ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:05:52 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 78ms (Views: 10.3ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:05:56 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (11.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 318ms (Views: 292.9ms | ActiveRecord: 11.0ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:06:26 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 75ms (Views: 9.3ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:06:29 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 314ms (Views: 304.3ms | ActiveRecord: 1.6ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:18:02 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"", "user"=>{"username"=>""}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (16.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", ""], ["created_at", "2020-05-19 03:18:03.004892"], ["updated_at", "2020-05-19 03:18:03.004892"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 317ms (Views: 14.9ms | ActiveRecord: 25.0ms | Allocations: 1266810)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:18:09 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 113ms (Views: 11.8ms | ActiveRecord: 2.1ms | Allocations: 507034)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:18:13 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 296ms (Views: 289.0ms | ActiveRecord: 2.6ms | Allocations: 2054604)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:19:07 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 84ms (Views: 10.4ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:19:11 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 331ms (Views: 321.0ms | ActiveRecord: 1.6ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:20:10 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 85ms (Views: 10.9ms | ActiveRecord: 1.6ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:20:13 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 423ms (Views: 416.9ms | ActiveRecord: 1.7ms | Allocations: 2047700)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:21:36 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 73ms (Views: 9.5ms | ActiveRecord: 1.8ms | Allocations: 505236)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:21:39 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 276ms (Views: 262.1ms | ActiveRecord: 5.6ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:28:51 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 92ms (Views: 11.9ms | ActiveRecord: 3.2ms | Allocations: 557780)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:28:58 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 300ms (Views: 289.3ms | ActiveRecord: 1.8ms | Allocations: 2054602)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:29:24 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 73ms (Views: 9.4ms | ActiveRecord: 6.0ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:29:28 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 283ms (Views: 268.5ms | ActiveRecord: 5.7ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:29:38 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 65ms (Views: 4.9ms | ActiveRecord: 1.4ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:29:44 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 303ms (Views: 293.3ms | ActiveRecord: 1.5ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:32:39 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 70ms (Views: 10.3ms | ActiveRecord: 1.5ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:32:44 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (10.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 304ms (Views: 289.6ms | ActiveRecord: 10.7ms | Allocations: 2045651)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:34:38 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 69ms (Views: 8.9ms | ActiveRecord: 1.5ms | Allocations: 505238)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:34:45 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 271ms (Views: 266.0ms | ActiveRecord: 1.4ms | Allocations: 2046283)
+
+
