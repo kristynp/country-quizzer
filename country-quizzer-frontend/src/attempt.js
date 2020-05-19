@@ -50,4 +50,15 @@ class Attempt {
     this.united_kingdom = data.united_kingdom
     this.vatican_city = data.vatican_city
   }
+
+  renderAttempt(createdTime) {
+    let parentUl = document.getElementById('quiz-results-ul');
+    let attemptLi = document.createElement('li');
+    let prettyDate = createdTime.split('T')[0];
+    let prettyTime = createdTime.split('T')[1].split('.')[0];
+    attemptLi.innerHTML = `Date: ${prettyDate} Time: ${prettyTime} Score: ${this.total_score}` 
+    parentUl.appendChild(attemptLi);
+  }
+
 }
+

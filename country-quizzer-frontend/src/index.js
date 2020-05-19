@@ -21,7 +21,6 @@ function submitQuiz(e) {
 
 function makeAttemptObject(quizInputs, name) {
   userId = parseInt(document.getElementById('user-id').innerHTML);
-  console.log(userId);
   handleQuizInputs(quizInputs)
   .then(attemptObj => {
     let count = 0;
@@ -79,7 +78,9 @@ function handleQuizInputs(quizInputs) {
     }
     return attemptObj; 
   })
-  .catch(err => console.log(err));
+  .catch(err => {
+    showError(err);
+  });
 }
 
 function attemptPostFetch(attemptObj) { 
@@ -91,13 +92,9 @@ function attemptPostFetch(attemptObj) {
   }) 
   .then(response => response.json())
   .then(attempt => {
-    let newAttempt = new Attempt(attempt); //! check this in debugger
-    let parentUl = document.getElementById('quiz-results-ul');
-    let attemptLi = document.createElement('li');
-    let prettyDate = attempt.created_at.split('T')[0];
-    let prettyTime = attempt.created_at.split('T')[1].split('.')[0];
-    attemptLi.innerHTML = `Date: ${prettyDate} Time: ${prettyTime} Score: ${attempt.total_score}` 
-    parentUl.appendChild(attemptLi);
+    time = attempt.created_at
+    let newAttempt = new Attempt(attempt);
+    newAttempt.renderAttempt(time);
   })
   .catch(err => {
     showError(err);
@@ -149,7 +146,7 @@ function handleCountryWordbank(){
     .then(countries => {
       countries.data.forEach(country => {
         let newCountry = new Country(country, country.attributes);
-        newCountry.renderCountry(); //! 
+        newCountry.renderCountry(); 
       })
       button.innerHTML = "Hide Wordbank"
     })
@@ -160,6 +157,3 @@ function handleCountryWordbank(){
     button.innerHTML = "Use Wordbank";
   }
 }
-
-
-
