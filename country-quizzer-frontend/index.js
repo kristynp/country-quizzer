@@ -1,7 +1,6 @@
 const countries_url = "http://localhost:3000/api/v1/countries";
 const users_url = "http://localhost:3000/api/v1/users";
 const attempts_url = "http://localhost:3000/api/v1/attempts";
-let countries_fetch = {};
 
 document.addEventListener('DOMContentLoaded', () => {
   const wordbankBtn = document.getElementById('wordbank-btn');
@@ -17,7 +16,7 @@ function submitQuiz(e) {
   e.preventDefault();
   const quizInputs = document.getElementsByClassName('quiz-input');
   const name = document.getElementById('body-header').innerHTML.split(', ')[1].slice(0,-1);
-  const attemptObject = makeAttemptObject(quizInputs, name);
+  makeAttemptObject(quizInputs, name);
 }
 
 function makeAttemptObject(quizInputs, name) {
@@ -80,6 +79,7 @@ function handleQuizInputs(quizInputs) {
     }
     return attemptObj; 
   })
+  .catch(err => console.log(err));
 }
 
 function attemptPostFetch(attemptObj) { 
@@ -98,14 +98,20 @@ function attemptPostFetch(attemptObj) {
     attemptLi.innerHTML = `Date: ${prettyDate} Time: ${prettyTime} Score: ${attempt.total_score}` 
     parentUl.appendChild(attemptLi);
   })
+  .catch(err => {
+    showError(err);
+  });
 }
 
-
+function showError(err) {
+  let errorDiv = document.getElementById('error-div');
+  errorDiv.innerHTML = err;
+}
 
 function findOrCreateUser(e) {
   e.preventDefault();
   const name = document.getElementById('input-username').value;
-  userPostFetch(name);
+  userPostFetch(name);  
 }
 
 function userPostFetch(name) {
@@ -118,6 +124,9 @@ function userPostFetch(name) {
   .then(user => {
     renderUser(user);
   })
+  .catch(err => {
+    showError(err);
+  });
 }
 
 function renderUser(user) {
@@ -144,6 +153,9 @@ function handleWordbank(){
       })
       button.innerHTML = "Hide Wordbank"
     })
+    .catch(err => {
+      showError(err);
+    });
   }  else {
     while (wordbankUl.firstChild) {
       wordbankUl.removeChild(wordbankUl.firstChild);
