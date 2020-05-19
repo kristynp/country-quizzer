@@ -147,6 +147,7 @@ function handleWordbank(){
     .then(response => response.json())
     .then(countries => {
       countries.data.forEach(country => {
+        let newCountry = new Country(country);
         let li = document.createElement('li');
         li.innerHTML = country.attributes.name;
         wordbankUl.appendChild(li);
