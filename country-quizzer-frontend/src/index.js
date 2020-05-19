@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const usernameForm = document.getElementById('username-form');
   const quizForm = document.getElementById('quiz-form');
 
-  wordbankBtn.addEventListener('click', handleWordbank);
+  wordbankBtn.addEventListener('click', handleCountryWordbank);
   usernameForm.addEventListener('submit', (e) => findOrCreateUser(e));
   quizForm.addEventListener('submit', (e) => submitQuiz(e));
 });
@@ -91,6 +91,7 @@ function attemptPostFetch(attemptObj) {
   }) 
   .then(response => response.json())
   .then(attempt => {
+    let newAttempt = new Attempt(attempt); //! check this in debugger
     let parentUl = document.getElementById('quiz-results-ul');
     let attemptLi = document.createElement('li');
     let prettyDate = attempt.created_at.split('T')[0];
@@ -138,7 +139,7 @@ function renderUser(user) {
   formDiv.remove();
 }
 
-function handleWordbank(){
+function handleCountryWordbank(){
   let button = document.getElementById('wordbank-btn');
   let wordbankUl = document.getElementById('wordbank-ul');
   
@@ -147,16 +148,11 @@ function handleWordbank(){
     .then(response => response.json())
     .then(countries => {
       countries.data.forEach(country => {
-        let newCountry = new Country(country);
-        let li = document.createElement('li');
-        li.innerHTML = country.attributes.name;
-        wordbankUl.appendChild(li);
+        let newCountry = new Country(country, country.attributes);
+        newCountry.renderCountry(); //! 
       })
       button.innerHTML = "Hide Wordbank"
     })
-    .catch(err => {
-      showError(err);
-    });
   }  else {
     while (wordbankUl.firstChild) {
       wordbankUl.removeChild(wordbankUl.firstChild);
@@ -164,5 +160,6 @@ function handleWordbank(){
     button.innerHTML = "Use Wordbank";
   }
 }
+
 
 
