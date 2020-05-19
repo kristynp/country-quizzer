@@ -4072,3 +4072,179 @@ Processing by Api::V1::CountriesController#index as */*
 Completed 200 OK in 271ms (Views: 266.0ms | ActiveRecord: 1.4ms | Allocations: 2046283)
 
 
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:47:10 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 84ms (Views: 8.9ms | ActiveRecord: 7.4ms | Allocations: 557780)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:47:17 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (2.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 283ms (Views: 277.1ms | ActiveRecord: 2.0ms | Allocations: 2054604)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:48:42 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 72ms (Views: 13.2ms | ActiveRecord: 1.5ms | Allocations: 505240)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:48:49 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (6.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 289ms (Views: 267.2ms | ActiveRecord: 6.1ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 21:48:49 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>true, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>true, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+Completed 500 Internal Server Error in 1233ms (ActiveRecord: 0.0ms | Allocations: 7887635)
+
+
+  
+ArgumentError (Unrecognized status code :unprocessible_entity):
+  
+app/controllers/api/v1/attempts_controller.rb:12:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-18 21:49:58 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 66ms (Views: 9.4ms | ActiveRecord: 1.5ms | Allocations: 507031)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:50:02 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 262ms (Views: 248.7ms | ActiveRecord: 5.7ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-18 21:50:03 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>true, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>true, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms | Allocations: 1358415)
+
+
+  
+ArgumentError (Unrecognized status code :unprocessible_entity):
+  
+app/controllers/api/v1/attempts_controller.rb:12:in `create'
+Started GET "/api/v1/countries" for ::1 at 2020-05-18 21:50:22 -0600
+Processing by Api::V1::CountriesController#index as HTML
+  [1m[36mCountry Load (6.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 295ms (Views: 285.5ms | ActiveRecord: 6.0ms | Allocations: 2045243)
+
+
+Started GET "/api/v1/attempts" for ::1 at 2020-05-18 21:50:26 -0600
+Processing by Api::V1::AttemptsController#index as HTML
+  [1m[36mAttempt Load (16.6ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:4:in `index'
+Completed 200 OK in 316ms (Views: 122.9ms | ActiveRecord: 18.0ms | Allocations: 1990250)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-19 09:51:59 -0600
+Started POST "/api/v1/users" for ::1 at 2020-05-19 09:52:00 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 162ms (Views: 10.8ms | ActiveRecord: 7.9ms | Allocations: 962163)
+
+
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 151ms (Views: 10.5ms | ActiveRecord: 44.1ms | Allocations: 943953)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-19 09:52:29 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 74ms (Views: 8.6ms | ActiveRecord: 1.6ms | Allocations: 507032)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-19 09:52:36 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 407ms (Views: 376.4ms | ActiveRecord: 10.7ms | Allocations: 2816884)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-19 09:52:36 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "username"=>"kpac", "attempt"=>{"total_score"=>1, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+Completed 500 Internal Server Error in 1105ms (ActiveRecord: 9.8ms | Allocations: 6353699)
+
+
+  
+ArgumentError (Unrecognized status code :unprocessible_entity):
+  
+app/controllers/api/v1/attempts_controller.rb:12:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-19 09:54:30 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 67ms (Views: 7.1ms | ActiveRecord: 1.7ms | Allocations: 507031)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-19 09:54:33 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 265ms (Views: 256.1ms | ActiveRecord: 1.7ms | Allocations: 2045529)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-19 09:54:34 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "username"=>"kpac", "attempt"=>{"total_score"=>1, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.0ms | Allocations: 1357408)
+
+
+  
+ArgumentError (Unrecognized status code :unprocessible_entity):
+  
+app/controllers/api/v1/attempts_controller.rb:12:in `create'
+Started POST "/api/v1/users" for ::1 at 2020-05-19 09:55:25 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 64ms (Views: 8.1ms | ActiveRecord: 5.4ms | Allocations: 507033)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-19 09:55:30 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (5.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 266ms (Views: 253.2ms | ActiveRecord: 5.7ms | Allocations: 2045527)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-19 09:55:30 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>true, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>2, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>2, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>true, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (12.8ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 2], ["created_at", "2020-05-19 15:55:31.070216"], ["updated_at", "2020-05-19 15:55:31.070216"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", true], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 454ms (Views: 38.6ms | ActiveRecord: 18.6ms | Allocations: 3298637)
+
+

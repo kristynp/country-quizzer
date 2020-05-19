@@ -22,6 +22,8 @@ function submitQuiz(e) {
 }
 
 function makeAttemptObject(quizInputs, name) {
+  userId = parseInt(document.getElementById('user-id').innerHTML);
+  console.log(userId);
   handleQuizInputs(quizInputs)
   .then(attemptObj => {
     let count = 0;
@@ -31,11 +33,11 @@ function makeAttemptObject(quizInputs, name) {
       }
     }
     attemptObj.total_score = count;
+    attemptObj.user_id = userId;
     attemptObj.username = name;
     return attemptObj;
   })
-  .then(res => console.log(res))
-
+  .then(res => attemptPostFetch(res))
 }
 
 function handleQuizInputs(quizInputs) {
@@ -82,15 +84,16 @@ function handleQuizInputs(quizInputs) {
 }
 
 function attemptPostFetch(attemptObj) { 
+  console.log(attemptObj);
   fetch(attempts_url, {
     method: "POST",
     headers: {"Content-Type": "application/json", "Accept": "application/json"},
     body: JSON.stringify(attemptObj)
   }) 
-  // .then(response => response.json())
-  // .then(attempt => {
-  //   console.log(attempt);
-  //})
+  .then(response => response.json())
+  .then(attempt => {
+    console.log(attempt);
+  })
 }
 
 function findOrCreateUser(e) {
@@ -114,7 +117,9 @@ function userPostFetch(name) {
 function renderUser(user) {
   const h1 = document.getElementById('body-header');
   const formDiv = document.getElementById('user-form-div');
-  h1.innerHTML = `Good luck, ${user.username}!`
+  const userDiv = document.getElementById('user-id');
+  h1.innerHTML = `Good luck, ${user.username}!`;
+  userDiv.innerHTML = user.id;
   formDiv.remove();
 }
 
