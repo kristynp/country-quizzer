@@ -1,7 +1,7 @@
 class User {
-  constructor(data) {
-    this.id = data.id;
-    this.username = data.username;
+  constructor(user) {
+    this.id = user.id;
+    this.username = user.username;
   }
 
   static findByUsername(name) {

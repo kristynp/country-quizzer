@@ -121,6 +121,7 @@ function userPostFetch(name) {
   .then(response => response.json())
   .then(user => {
     renderUser(user);
+    new User (user);
     document.getElementById("quiz-container").classList.remove("hidden");
     document.getElementById("score-heading").classList.remove("hidden");
     document.getElementById("wordbank-btn").classList.remove("hidden")

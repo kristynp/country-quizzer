@@ -1,5 +1,7 @@
 class Attempt {
   constructor(data) {
+    debugger
+    this.id = data.id
     this.total_score = data.total_score;
     this.user_id = data.user_id
     this.albania = data.albania
