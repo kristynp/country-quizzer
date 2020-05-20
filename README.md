@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a map quiz that will give the results of how many European countries the user can correctly identify. 
 
-Things you may want to cover:
+To use it, clone down the repo and open it up. A local server must be running for both the front and backend for it to function.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
