@@ -84,7 +84,6 @@ function handleQuizInputs(quizInputs) {
 }
 
 function attemptPostFetch(attemptObj) { 
-  console.log(attemptObj);
   fetch(attempts_url, {
     method: "POST",
     headers: {"Content-Type": "application/json", "Accept": "application/json"},

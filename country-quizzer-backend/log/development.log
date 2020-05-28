@@ -4483,3 +4483,724 @@ Processing by Api::V1::AttemptsController#create as JSON
 Completed 202 Accepted in 434ms (Views: 39.8ms | ActiveRecord: 9.3ms | Allocations: 3158560)
 
 
+Started GET "/countries" for ::1 at 2020-05-28 09:41:34 -0600
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/countries"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-05-28 09:41:35 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/countries" for ::1 at 2020-05-28 09:58:41 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/countries"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/countries" for ::1 at 2020-05-28 09:58:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/countries"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/countries" for ::1 at 2020-05-28 09:58:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/countries"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/countries" for ::1 at 2020-05-28 09:58:45 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/countries"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/countries" for ::1 at 2020-05-28 09:58:47 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/countries"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/users" for ::1 at 2020-05-28 09:59:13 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 95ms (Views: 1.1ms | ActiveRecord: 96.6ms | Allocations: 4284)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:18 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (23.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 43ms (Views: 11.2ms | ActiveRecord: 29.8ms | Allocations: 9069)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:28 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (4.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 4.1ms | Allocations: 5403)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:28 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (11.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (31.2ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:28.449523"], ["updated_at", "2020-05-28 15:59:28.449523"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 149ms (Views: 1.0ms | ActiveRecord: 65.1ms | Allocations: 40243)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:29 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.7ms | Allocations: 5403)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:29 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (3.5ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:29.366404"], ["updated_at", "2020-05-28 15:59:29.366404"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 25ms (Views: 0.7ms | ActiveRecord: 5.0ms | Allocations: 5497)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:30 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.6ms | Allocations: 5403)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:30 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (3.9ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:30.496971"], ["updated_at", "2020-05-28 15:59:30.496971"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 16ms (Views: 0.8ms | ActiveRecord: 5.0ms | Allocations: 5497)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:30 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 5388)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:30 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (0.9ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:30.970651"], ["updated_at", "2020-05-28 15:59:30.970651"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 25ms (Views: 0.8ms | ActiveRecord: 3.6ms | Allocations: 5495)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:31 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (10.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 8.0ms | ActiveRecord: 10.1ms | Allocations: 5388)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:31 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (0.9ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:31.357882"], ["updated_at", "2020-05-28 15:59:31.357882"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 22ms (Views: 0.7ms | ActiveRecord: 1.9ms | Allocations: 5501)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:31 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.6ms | Allocations: 5388)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:31 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (0.9ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:31.729810"], ["updated_at", "2020-05-28 15:59:31.729810"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 20ms (Views: 0.7ms | ActiveRecord: 3.1ms | Allocations: 5495)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 09:59:32 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 5388)
+
+
+Started POST "/api/v1/attempts" for ::1 at 2020-05-28 09:59:32 -0600
+Processing by Api::V1::AttemptsController#create as JSON
+  Parameters: {"russia"=>true, "finland"=>false, "estonia"=>false, "belarus"=>false, "latvia"=>false, "lithuania"=>false, "ukraine"=>false, "moldova"=>false, "norway"=>false, "sweden"=>false, "denmark"=>false, "poland"=>false, "czechia"=>false, "slovakia"=>false, "romania"=>false, "bulgaria"=>false, "turkey"=>false, "cyprus"=>false, "germany"=>false, "austria"=>false, "hungary"=>false, "serbia"=>false, "kosovo"=>false, "north_macedonia"=>false, "greece"=>false, "slovenia"=>false, "croatia"=>false, "bosnia"=>false, "montenegro"=>false, "albania"=>false, "iceland"=>false, "netherlands"=>false, "belgium"=>false, "switzerland"=>false, "san_marino"=>false, "italy"=>false, "vatican_city"=>false, "malta"=>false, "ireland"=>false, "united_kingdom"=>false, "luxembourg"=>false, "liechtenstein"=>false, "france"=>false, "monaco"=>false, "andorra"=>false, "portugal"=>false, "spain"=>false, "total_score"=>1, "user_id"=>2, "username"=>"kpac", "attempt"=>{"total_score"=>1, "user_id"=>2, "albania"=>false, "andorra"=>false, "austria"=>false, "belarus"=>false, "belgium"=>false, "bosnia"=>false, "bulgaria"=>false, "croatia"=>false, "cyprus"=>false, "czechia"=>false, "denmark"=>false, "estonia"=>false, "finland"=>false, "france"=>false, "germany"=>false, "greece"=>false, "hungary"=>false, "iceland"=>false, "ireland"=>false, "italy"=>false, "kosovo"=>false, "latvia"=>false, "liechtenstein"=>false, "lithuania"=>false, "luxembourg"=>false, "malta"=>false, "moldova"=>false, "monaco"=>false, "montenegro"=>false, "netherlands"=>false, "north_macedonia"=>false, "norway"=>false, "poland"=>false, "portugal"=>false, "romania"=>false, "russia"=>true, "san_marino"=>false, "serbia"=>false, "slovakia"=>false, "slovenia"=>false, "spain"=>false, "sweden"=>false, "switzerland"=>false, "turkey"=>false, "ukraine"=>false, "united_kingdom"=>false, "vatican_city"=>false}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[36mAttempt Create (0.8ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id", "albania", "andorra", "austria", "belarus", "belgium", "bosnia", "bulgaria", "croatia", "cyprus", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kosovo", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "moldova", "monaco", "montenegro", "netherlands", "north_macedonia", "norway", "poland", "portugal", "romania", "russia", "san_marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united_kingdom", "vatican_city") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51) RETURNING "id"[0m  [["total_score", 1], ["created_at", "2020-05-28 15:59:32.496666"], ["updated_at", "2020-05-28 15:59:32.496666"], ["user_id", 2], ["albania", false], ["andorra", false], ["austria", false], ["belarus", false], ["belgium", false], ["bosnia", false], ["bulgaria", false], ["croatia", false], ["cyprus", false], ["czechia", false], ["denmark", false], ["estonia", false], ["finland", false], ["france", false], ["germany", false], ["greece", false], ["hungary", false], ["iceland", false], ["ireland", false], ["italy", false], ["kosovo", false], ["latvia", false], ["liechtenstein", false], ["lithuania", false], ["luxembourg", false], ["malta", false], ["moldova", false], ["monaco", false], ["montenegro", false], ["netherlands", false], ["north_macedonia", false], ["norway", false], ["poland", false], ["portugal", false], ["romania", false], ["russia", true], ["san_marino", false], ["serbia", false], ["slovakia", false], ["slovenia", false], ["spain", false], ["sweden", false], ["switzerland", false], ["turkey", false], ["ukraine", false], ["united_kingdom", false], ["vatican_city", false]]
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/attempts_controller.rb:9:in `create'
+Completed 202 Accepted in 23ms (Views: 1.1ms | ActiveRecord: 4.5ms | Allocations: 5495)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:01:51 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 5ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 1074)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:34:43 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 18ms (Views: 1.6ms | ActiveRecord: 1.8ms | Allocations: 1161)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 10:34:45 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 1.1ms | Allocations: 5405)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:34:54 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"LunaLovegood", "user"=>{"username"=>"LunaLovegood"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LunaLovegood"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 7ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 1074)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:34:58 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1076)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:35:58 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"LunaLovegood", "user"=>{"username"=>"LunaLovegood"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LunaLovegood"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 6ms (Views: 0.6ms | ActiveRecord: 1.2ms | Allocations: 1076)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:36:18 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"PlantLover", "user"=>{"username"=>"PlantLover"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "PlantLover"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (16.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "PlantLover"], ["created_at", "2020-05-28 16:36:18.664906"], ["updated_at", "2020-05-28 16:36:18.664906"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 33ms (Views: 0.5ms | ActiveRecord: 19.7ms | Allocations: 3636)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:37:51 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"LunaLovegood", "user"=>{"username"=>"LunaLovegood"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LunaLovegood"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 5ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 1076)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:38:11 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1076)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:43:54 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 20ms (Views: 1.7ms | ActiveRecord: 0.8ms | Allocations: 1076)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:44:30 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1081)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (26.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (8723.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_development"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (238.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_development"[0m
+  [1m[35m (204.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "country_quizzer_test"[0m
+  [1m[35m (661.3ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_development" ENCODING = 'unicode'[0m
+  [1m[35m (648.1ms)[0m  [1m[35mCREATE DATABASE "country_quizzer_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (30.3ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "austria" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (8.8ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-28 16:48:32.830301"], ["updated_at", "2020-05-28 16:48:32.830301"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "d990a6ac1bc68f49dd7e48f4fcab357984036db6"], ["created_at", "2020-05-28 16:48:32.840665"], ["updated_at", "2020-05-28 16:48:32.840665"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "attempts" CASCADE[0m
+  [1m[35m (16.8ms)[0m  [1m[35mCREATE TABLE "attempts" ("id" bigserial primary key, "total_score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" bigint NOT NULL, "albania" boolean, "andorra" boolean, "austria" boolean, "belarus" boolean, "belgium" boolean, "bosnia" boolean, "bulgaria" boolean, "croatia" boolean, "cyprus" boolean, "czechia" boolean, "denmark" boolean, "estonia" boolean, "finland" boolean, "france" boolean, "germany" boolean, "greece" boolean, "hungary" boolean, "iceland" boolean, "ireland" boolean, "italy" boolean, "kosovo" boolean, "latvia" boolean, "liechtenstein" boolean, "lithuania" boolean, "luxembourg" boolean, "malta" boolean, "moldova" boolean, "monaco" boolean, "montenegro" boolean, "netherlands" boolean, "north_macedonia" boolean, "norway" boolean, "poland" boolean, "portugal" boolean, "romania" boolean, "russia" boolean, "san_marino" boolean, "serbia" boolean, "slovakia" boolean, "slovenia" boolean, "spain" boolean, "sweden" boolean, "switzerland" boolean, "turkey" boolean, "ukraine" boolean, "united_kingdom" boolean, "vatican_city" boolean)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_attempts_on_user_id" ON "attempts"  ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "map_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "attempts" ADD CONSTRAINT "fk_rails_c8dbef4dd5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200517203001)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200515194903),
+(20200515221810),
+(20200516203009),
+(20200516203744),
+(20200516215208);
+
+[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-28 16:48:32.979338"], ["updated_at", "2020-05-28 16:48:32.979338"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-05-28 16:48:32.987578"], ["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "d990a6ac1bc68f49dd7e48f4fcab357984036db6"], ["created_at", "2020-05-28 16:48:33.008281"], ["updated_at", "2020-05-28 16:48:33.008281"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAttempt Load (1.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.9ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Albania"], ["created_at", "2020-05-28 16:48:33.095893"], ["updated_at", "2020-05-28 16:48:33.095893"], ["map_id", 30]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Andorra"], ["created_at", "2020-05-28 16:48:33.107843"], ["updated_at", "2020-05-28 16:48:33.107843"], ["map_id", 45]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Austria"], ["created_at", "2020-05-28 16:48:33.112563"], ["updated_at", "2020-05-28 16:48:33.112563"], ["map_id", 20]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Belarus"], ["created_at", "2020-05-28 16:48:33.116748"], ["updated_at", "2020-05-28 16:48:33.116748"], ["map_id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Belgium"], ["created_at", "2020-05-28 16:48:33.121223"], ["updated_at", "2020-05-28 16:48:33.121223"], ["map_id", 33]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bosnia"], ["created_at", "2020-05-28 16:48:33.125425"], ["updated_at", "2020-05-28 16:48:33.125425"], ["map_id", 28]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bulgaria"], ["created_at", "2020-05-28 16:48:33.129663"], ["updated_at", "2020-05-28 16:48:33.129663"], ["map_id", 16]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Croatia"], ["created_at", "2020-05-28 16:48:33.134042"], ["updated_at", "2020-05-28 16:48:33.134042"], ["map_id", 27]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cyprus"], ["created_at", "2020-05-28 16:48:33.138512"], ["updated_at", "2020-05-28 16:48:33.138512"], ["map_id", 18]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Czechia"], ["created_at", "2020-05-28 16:48:33.142802"], ["updated_at", "2020-05-28 16:48:33.142802"], ["map_id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Denmark"], ["created_at", "2020-05-28 16:48:33.147186"], ["updated_at", "2020-05-28 16:48:33.147186"], ["map_id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Estonia"], ["created_at", "2020-05-28 16:48:33.151448"], ["updated_at", "2020-05-28 16:48:33.151448"], ["map_id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Finland"], ["created_at", "2020-05-28 16:48:33.155838"], ["updated_at", "2020-05-28 16:48:33.155838"], ["map_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "France"], ["created_at", "2020-05-28 16:48:33.160223"], ["updated_at", "2020-05-28 16:48:33.160223"], ["map_id", 43]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Germany"], ["created_at", "2020-05-28 16:48:33.164991"], ["updated_at", "2020-05-28 16:48:33.164991"], ["map_id", 19]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Greece"], ["created_at", "2020-05-28 16:48:33.170234"], ["updated_at", "2020-05-28 16:48:33.170234"], ["map_id", 25]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hungary"], ["created_at", "2020-05-28 16:48:33.185813"], ["updated_at", "2020-05-28 16:48:33.185813"], ["map_id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Iceland"], ["created_at", "2020-05-28 16:48:33.190064"], ["updated_at", "2020-05-28 16:48:33.190064"], ["map_id", 31]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ireland"], ["created_at", "2020-05-28 16:48:33.194357"], ["updated_at", "2020-05-28 16:48:33.194357"], ["map_id", 39]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Italy"], ["created_at", "2020-05-28 16:48:33.199764"], ["updated_at", "2020-05-28 16:48:33.199764"], ["map_id", 36]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kosovo"], ["created_at", "2020-05-28 16:48:33.204121"], ["updated_at", "2020-05-28 16:48:33.204121"], ["map_id", 23]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Latvia"], ["created_at", "2020-05-28 16:48:33.208307"], ["updated_at", "2020-05-28 16:48:33.208307"], ["map_id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Liechtenstein"], ["created_at", "2020-05-28 16:48:33.212457"], ["updated_at", "2020-05-28 16:48:33.212457"], ["map_id", 42]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "lithuania"], ["created_at", "2020-05-28 16:48:33.217164"], ["updated_at", "2020-05-28 16:48:33.217164"], ["map_id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Luxembourg"], ["created_at", "2020-05-28 16:48:33.221745"], ["updated_at", "2020-05-28 16:48:33.221745"], ["map_id", 41]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Malta"], ["created_at", "2020-05-28 16:48:33.225934"], ["updated_at", "2020-05-28 16:48:33.225934"], ["map_id", 38]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Moldova"], ["created_at", "2020-05-28 16:48:33.230463"], ["updated_at", "2020-05-28 16:48:33.230463"], ["map_id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Monaco"], ["created_at", "2020-05-28 16:48:33.234791"], ["updated_at", "2020-05-28 16:48:33.234791"], ["map_id", 44]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Montenegro"], ["created_at", "2020-05-28 16:48:33.238908"], ["updated_at", "2020-05-28 16:48:33.238908"], ["map_id", 29]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Netherlands"], ["created_at", "2020-05-28 16:48:33.243549"], ["updated_at", "2020-05-28 16:48:33.243549"], ["map_id", 32]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "North Macedonia"], ["created_at", "2020-05-28 16:48:33.247803"], ["updated_at", "2020-05-28 16:48:33.247803"], ["map_id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Norway"], ["created_at", "2020-05-28 16:48:33.252196"], ["updated_at", "2020-05-28 16:48:33.252196"], ["map_id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Poland"], ["created_at", "2020-05-28 16:48:33.256438"], ["updated_at", "2020-05-28 16:48:33.256438"], ["map_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Portugal"], ["created_at", "2020-05-28 16:48:33.260677"], ["updated_at", "2020-05-28 16:48:33.260677"], ["map_id", 46]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Romania"], ["created_at", "2020-05-28 16:48:33.265009"], ["updated_at", "2020-05-28 16:48:33.265009"], ["map_id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Russia"], ["created_at", "2020-05-28 16:48:33.269189"], ["updated_at", "2020-05-28 16:48:33.269189"], ["map_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "San Marino"], ["created_at", "2020-05-28 16:48:33.273261"], ["updated_at", "2020-05-28 16:48:33.273261"], ["map_id", 35]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Serbia"], ["created_at", "2020-05-28 16:48:33.286341"], ["updated_at", "2020-05-28 16:48:33.286341"], ["map_id", 22]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Slovakia"], ["created_at", "2020-05-28 16:48:33.290637"], ["updated_at", "2020-05-28 16:48:33.290637"], ["map_id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Slovenia"], ["created_at", "2020-05-28 16:48:33.294907"], ["updated_at", "2020-05-28 16:48:33.294907"], ["map_id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Spain"], ["created_at", "2020-05-28 16:48:33.299529"], ["updated_at", "2020-05-28 16:48:33.299529"], ["map_id", 47]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sweden"], ["created_at", "2020-05-28 16:48:33.303835"], ["updated_at", "2020-05-28 16:48:33.303835"], ["map_id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Switzerland"], ["created_at", "2020-05-28 16:48:33.308161"], ["updated_at", "2020-05-28 16:48:33.308161"], ["map_id", 34]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Turkey"], ["created_at", "2020-05-28 16:48:33.312372"], ["updated_at", "2020-05-28 16:48:33.312372"], ["map_id", 17]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ukraine"], ["created_at", "2020-05-28 16:48:33.316530"], ["updated_at", "2020-05-28 16:48:33.316530"], ["map_id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "United Kingdom"], ["created_at", "2020-05-28 16:48:33.320684"], ["updated_at", "2020-05-28 16:48:33.320684"], ["map_id", 40]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at", "map_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Vatican City"], ["created_at", "2020-05-28 16:48:33.324835"], ["updated_at", "2020-05-28 16:48:33.324835"], ["map_id", 37]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "Demo User"], ["created_at", "2020-05-28 16:48:33.335933"], ["updated_at", "2020-05-28 16:48:33.335933"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttempt Create (1.1ms)[0m  [1m[32mINSERT INTO "attempts" ("total_score", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["total_score", 0], ["created_at", "2020-05-28 16:48:33.419505"], ["updated_at", "2020-05-28 16:48:33.419505"], ["user_id", 1]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:50:24 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "kpac"], ["created_at", "2020-05-28 16:50:24.353654"], ["updated_at", "2020-05-28 16:50:24.353654"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 35ms (Views: 0.6ms | ActiveRecord: 21.3ms | Allocations: 6890)
+
+
+Started GET "/api/v1/countries" for ::1 at 2020-05-28 10:50:31 -0600
+Processing by Api::V1::CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/api/v1/countries_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 6.8ms | Allocations: 9071)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 10:50:45 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 11ms (Views: 0.6ms | ActiveRecord: 6.1ms | Allocations: 1103)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-05-28 11:02:20 -0600
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"username"=>"kpac", "user"=>{"username"=>"kpac"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kpac"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 202 Accepted in 16ms (Views: 1.6ms | ActiveRecord: 1.0ms | Allocations: 1177)
+
+

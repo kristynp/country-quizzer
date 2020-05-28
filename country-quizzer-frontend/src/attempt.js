@@ -1,6 +1,5 @@
 class Attempt {
   constructor(data) {
-    debugger
     this.id = data.id
     this.total_score = data.total_score;
     this.user_id = data.user_id
@@ -51,6 +50,8 @@ class Attempt {
     this.ukraine = data.ukraine
     this.united_kingdom = data.united_kingdom
     this.vatican_city = data.vatican_city
+
+    Attempt.all.push(this)
   }
 
   renderAttempt(createdTime) {
@@ -63,4 +64,6 @@ class Attempt {
   }
 
 }
+
+Attempt.all = [];
 
