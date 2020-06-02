@@ -1,6 +1,6 @@
-const countries_url = "http://localhost:3000/api/v1/countries";
-const users_url = "http://localhost:3000/api/v1/users";
-const attempts_url = "http://localhost:3000/api/v1/attempts";
+const countriesUrl = "http://localhost:3000/api/v1/countries";
+const usersUrl = "http://localhost:3000/api/v1/users";
+const attemptsUrl = "http://localhost:3000/api/v1/attempts";
 
 document.addEventListener('DOMContentLoaded', () => {
   const wordbankBtn = document.getElementById('wordbank-btn');
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   wordbankBtn.addEventListener('click', handleCountryWordbank);
   usernameForm.addEventListener('submit', (e) => findOrCreateUser(e));
   quizForm.addEventListener('submit', (e) => submitQuiz(e));
+  Attempt.displayAllScores();
 });
 
 function submitQuiz(e) {
@@ -38,11 +39,11 @@ function makeAttemptObject(quizInputs, name) {
 }
 
 function handleQuizInputs(quizInputs) {
-  return fetch(countries_url)
+  return fetch(countriesUrl)
   .then(response => response.json())
   .then(countries => {
     let attemptObj = {};
-    let countriesObj = {}; // {1: "Russia, 2: "Finland", ...}
+    let countriesObj = {}; 
     countries.data.forEach(country => {
       const mapNum = country.attributes.map_id;
       const cName = country.attributes.name;
@@ -55,22 +56,16 @@ function handleQuizInputs(quizInputs) {
       const inputName = input.value.toLowerCase();
       const inputNameNoSpace = input.value.toLowerCase().replace(/[^A-Za-z]/g, "")
       if (countriesNameNoSpace === inputNameNoSpace) {
-        // compare input name with input name no space.
         if (inputName === inputNameNoSpace) {
-        // if they are the same, use input name as key value is true
           attemptObj[inputName] = true;
         } else {
-        // if they are NOT the same, substitue the " " for '_' for setting key, and value as true
           const adjustedName = inputName.replace(/[^A-Za-z]/g, "_");
           attemptObj[adjustedName] = true;
          }
       } else {
-        //compare value of country name with country name no space
         if (countriesName === countriesNameNoSpace) {
-        // if they are the same, use country name as key, value is false
         attemptObj[countriesName] = false;
         } else {
-        //if they are NOT the same, substitue the " " for '_' for setting key, and value as false
         const adjustedName = countriesName.replace(/[^A-Za-z]/g, "_");
         attemptObj[adjustedName] = false;
         }
@@ -84,7 +79,7 @@ function handleQuizInputs(quizInputs) {
 }
 
 function attemptPostFetch(attemptObj) { 
-  fetch(attempts_url, {
+  fetch(attemptsUrl, {
     method: "POST",
     headers: {"Content-Type": "application/json", "Accept": "application/json"},
     body: JSON.stringify(attemptObj)
@@ -112,7 +107,7 @@ function findOrCreateUser(e) {
 }
 
 function userPostFetch(name) {
-  fetch(users_url, {
+  fetch(usersUrl, {
     method: "POST",
     headers: {"Content-Type": "application/json", "Accept": "application/json"},
     body: JSON.stringify({username: name})
@@ -144,7 +139,7 @@ function handleCountryWordbank(){
   let wordbankUl = document.getElementById('wordbank-ul');
   
   if (button.innerHTML === "Use Wordbank") {
-    fetch(countries_url)
+    fetch(countriesUrl)
     .then(response => response.json())
     .then(countries => {
       countries.data.forEach(country => {

@@ -6,9 +6,9 @@ class User {
   }
 
   static findByUsername(name) {
-    //console.log(User.all)
     return this.all.find(user => user.username === name);
   }
+
 }
 
 User.all = [];

@@ -63,6 +63,20 @@ class Attempt {
     parentUl.appendChild(attemptLi);
   }
 
+  static displayAllScores(){
+
+    let scoresUl = document.getElementById('all-user-scores');
+    fetch('http://localhost:3000/api/v1/attempts')
+    .then(resp => resp.json())
+    .then(attempts => {
+      attempts.data.map(attempt => {
+        console.log('in fetch')
+        const div = document.createElement('li')
+        div.innerHTML = 'User: ' + attempt.attributes.user.username + ' Score: ' + attempt.attributes.total_score;
+        scoresUl.appendChild(div); 
+      })
+    })
+  }
 }
 
 Attempt.all = [];

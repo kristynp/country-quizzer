@@ -17,12 +17,12 @@
   float: left;
 }
 
-#score-div {
+#score-div, #all-user-scores {
   text-align: center;
   font-weight: bold;
 }
 
-#quiz-results-ul {
+#quiz-results-ul, #all-user-scores {
   list-style: none;
 }
 
