@@ -72,7 +72,7 @@ class Attempt {
       attempts.data.map(attempt => {
         console.log('in fetch')
         const div = document.createElement('li')
-        div.innerHTML = 'User: ' + attempt.attributes.user.username + ' Score: ' + attempt.attributes.total_score;
+        div.innerHTML = 'User: ' + attempt.attributes.user.username + ' -- Score: ' + attempt.attributes.total_score;
         scoresUl.appendChild(div); 
       })
     })
